@@ -1,0 +1,1005 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasBreadthRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasBreadthRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasConsult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasConsult">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isConsultedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDepthRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDepthRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasLearningMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasLearningMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasPerform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasPerform">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isPerformOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasRecommendation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasRecommendation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isRecommendedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasResponsible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasResponsible">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isResponsibleFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#idMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#idMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isConsultedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isConsultedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isPerformOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isPerformOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isRecommendedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isRecommendedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isResponsibleFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isResponsibleFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9# -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Deployment"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Integration_Management"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysis_and_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysis_and_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysis_and_Design"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#isDomainOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Analysis_and_Design"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasBreadthRole"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Architect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDepthRole"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Designer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Analysis_and_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Analysis_and_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysis_and_Design"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Business_Modeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Business_Modeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Configuration_and_Change_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Configuration_and_Change_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Project_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Project_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Modeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Modeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Configuration_and_Change_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Configuration_and_Change_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Developers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Developers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#General_Roles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#General_Roles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Production_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Production_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Communications_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Communications_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Cost_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Cost_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Human_Resource_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Human_Resource_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Integration_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Integration_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Procurement_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Procurement_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Quality_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Quality_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Risk_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Risk_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Scope_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Scope_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Time_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Time_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements"/>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Report_Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Report_Status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#RUP_Core_Elements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Schedule_and_Assign_Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Schedule_and_Assign_Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Discipline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Testers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Testers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Update_Change_Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Update_Change_Request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Acquire_Staff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Acquire_Staff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+        <hasResponsible rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#GANTT_Chart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business-Model_Reviewer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business-Model_Reviewer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Designer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Designer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Process_Analyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Process_Analyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+        <hasPerform rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Requirements_Reviewer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Business_Requirements_Reviewer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Change_Control_Manager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Change_Control_Manager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Configuration_Manager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Configuration_Manager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Deployment_Manager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Deployment_Manager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#GANTT_Chart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#GANTT_Chart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Issue_Log -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Issue_Log">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#hasDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysis_and_Design"/>
+            </owl:Restriction>
+        </rdf:type>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM001"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Programming_Guidelines"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements_Reviewer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM002"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Risk_List"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Update_Change_Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM003"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Administrator"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Designer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM004"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Develop_Business_Case"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Schedule_and_Assign_Work"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM005"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#User_Interface_Guidelines"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM006"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Measurement_Plan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM007"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Report_Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM008"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Review_Record"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <idMaterial rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM010"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#updated"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#LM010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#PM_Learning_Material"/>
+        <isRecommendedTo rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Analyst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Measurement_Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Measurement_Plan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Monitor_Project_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Monitor_Project_Status">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Proccess_Engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Proccess_Engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Programming_Guidelines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Programming_Guidelines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Manager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Manager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+        <hasConsult rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Plan"/>
+        <hasPerform rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Acquire_Staff"/>
+        <hasPerform rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Monitor_Project_Status"/>
+        <hasResponsible rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#GANTT_Chart"/>
+        <hasResponsible rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Issue_Log"/>
+        <hasResponsible rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Development_Plan"/>
+        <hasResponsible rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Status_Report"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Reviewer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Project_Reviewer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Managers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Report_Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Report_Status">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements_Reviewer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements_Reviewer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements_Specifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Requirements_Specifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Review_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Review_Record">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Risk_List -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Risk_List">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Schedule_and_Assign_Work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Schedule_and_Assign_Work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Analyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Analyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Architect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Architect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Designer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Designer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Development_Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Software_Development_Plan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Status_Report -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Status_Report">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Administrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Administrator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Analyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#System_Analyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Designer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Designer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Test_Plan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Update_Change_Request -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Update_Change_Request">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Use-Case_Specifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Use-Case_Specifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#User-Interface_Designer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#User-Interface_Designer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Analysts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#User_Interface_Guidelines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#User_Interface_Guidelines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#updated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#updated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/morningstar/ontologies/2019/9/untitled-ontology-9#Artifact"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
